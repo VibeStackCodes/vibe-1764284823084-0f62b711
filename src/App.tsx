@@ -1,7 +1,8 @@
-import { Outlet } from 'react-router-dom'
-import { Suspense } from 'react'
-import { ErrorBoundary } from '@/components/error-boundary'
-import { VibeStackBadge } from '@/components/vibestack-badge'
+import { Outlet } from 'react-router-dom';
+import { Suspense } from 'react';
+import { ErrorBoundary } from '@/components/error-boundary';
+import { VibeStackBadge } from '@/components/vibestack-badge';
+import KanbanBoard from '@/components/KanbanBoard';
 
 /**
  * Main App component with routing
@@ -17,11 +18,12 @@ function App() {
           </div>
         }
       >
+        <KanbanBoard />
         <Outlet />
       </Suspense>
       <VibeStackBadge />
     </ErrorBoundary>
-  )
+  );
 }
 
-export default App
+export default App;

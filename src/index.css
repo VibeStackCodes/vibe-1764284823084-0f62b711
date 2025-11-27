@@ -8,3 +8,15 @@
     @apply bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-50;
   }
 }
+
+@layer components {
+  .kanban-board {
+    @apply flex flex-col md:flex-row;
+  }
+  .kanban-column {
+    @apply flex-1 p-4;
+  }
+  .task-card {
+    @apply bg-white shadow-md rounded-lg p-4 mb-4;
+  }
+}
